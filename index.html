@@ -3,100 +3,168 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico.svg" type="image/svg+sml">
+    <link rel="apple-touch-icon" href="img/icons/152.png">
+    <link rel="manifest" href="manifest.webmanifest">
+
   </head>
   <body>
-    <hedaer>
+   
+    <header>
       <nav>
         <ul>
           <li><a href="#">информация</a></li>
           <li><a href="#">фото и видео</a> </li>
-          <li><a href='#' alt="Логотип города Седона">city of sedona</a></li>
+          <li><a href="img/icons/logo.svg" width="138" height="70" alt="Логотип города Седона">city of sedona</a></li>
           <li><a href="#">карта штата</a></li>
           <li><a href="#">гостиницы</a></li>
         </ul>
       </nav>
-      </header>
-      <main>
+    </header>
+    
+    <main>
+      <section>
         <h1>Wellcome to the gorgeus<br> Sedona</h1>
         <q>Because the Grand Canyon Sucks!</q>
+      </section>
+      <section>
         <p>Седона - небольшой городок в Аризоне, заслуживающий лучшего!</p>
-        <section>
-          <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гран Каньон!</h2>
-          <ul>
-            <li> настоящий городок
-              <h3>-№1-</h3>
-              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-                
-              <ul>
-                <li>жильё
-                  <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p></li>
-                <li>еда
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p></li>
-                <li>сувениры
-                  <p> Не только китайского, но и местного производства!</p></li>
-              </ul>
-            </li>
-            <li> там есть мост дьявола
-              <h3>-№2-</h3>
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь!</p>
-              <ul>
-                <li>небольшая площадь
-                <h3>-№3-</h3>
-                 <p>Все достопримечательности находятся очень близко</p> 
-                </li>
-                <li>мало туристов
-                <h3>-№4-</h3>
+      </section>
+      <section>
+        <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гран Каньон!</h2>
+    
+        <div>
+          <div>
+            <h3>настоящий городок<h3>
+                <h3>-№1-</h3>
+                <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <div>
+            <img src="img/images/image.png" width="800" height="256" alt="маленький американский городок" >
+          </div>
+        </div>
+      </section>
+      <section>
+        <ul class="line">
+          <li>
+            <div>
+              <img>
+            </div>
+            <div>
+              <h3>жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img>
+            </div>
+            <div>
+              <h3>еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img>
+            </div>
+            <div>
+              <h3>сувениры</h3>
+              <p> Не только китайского, но и местного производства!</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li>
+            <div>
+              <div>
+                <img src="img/images/image-canyon.png" width="800" height="256" alt="Мост дьявола">
+              </div>
+              <div>
+                <h3>там есть мост дьявола</h3>
+                <h3>-№2-</h3>
+                <p>Да, по нему можно пройти! Если конечно вы осмелитесь!</p>
+              </div>
+            </div>
+            <ul class="line">
+              <li>
+                <div>
+                  <h3>небольшая площадь</h3>
+                  <h3>-№3-</h3>
+                  <p>Все достопримечательности находятся очень близко</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>мало туристов</h3>
+                  <h3>-№4-</h3>
                   <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                </li>
-                <li>красивая дорога
-                <h3>-№5-</h3>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>красивая дорога</h3>
+                  <h3>-№5-</h3>
                   <p>Большинство едет в Гранд Каньон и толпится там!</p>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h2>Заинтересовались?</h2>
-          <p><a>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</a></p>
-          <legend>Записаться</legend>
-          <form action ="" method="post">
-            <p>
-              <label for="arrive-day">Дата заезда</label>
-              <input id="arrive-day" type="text" name="date" placeholder="27 апреля 2017">
-            </p>
-            <p>
-              <label for="departure-day">Дата выезда</label>
-              <input id="departure-day" type="text" name="day-out" placeholder="4 июля 2017">
-            </p>
-            <p>
-              <label for="adults">Взрослые:</label>
-               <input type="number" id="adults" min="1" max="10" step="1">      
-            </p>
-            <p>
-              <label for="children">Дети:</label>
-              <input type="number" id="children" min="0" max="5" step="1">
-            </p>
-            <button type="submit">Найти</button>
-          </section>
-      </main>
-        
-        <footer>
-          <section>
-            <p><a href="#">#visitsedona</a></p>
-            <p><a href="+74956660166">Тел:+7(495)666-01-66</a></p>
-          </section>
-          <section>
-            <ul>
-              <li><a href="#">twitter</a></li>
-              <li><a href="#">facebook</a></li>
-              <li><a href="#">youtube</a></li>
+                </div>
+              </li>
             </ul>
-          </section>
-           <p>
-        Website by
-        <a href="https://htmlacademy.ru">HTML Academy</a>
-      </p>
-          </footer>
-  </body>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Заинтересовались?</h2>
+        <p><a>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</a></p>
+      </section>
+      <section>
+        <img src="img/images/map.png" width="1200" height="120" alt="карта Седоны">
+      </section>
+      <section>
+        <legend>Поиск гостиницы в Седоне</legend>
+        <form action="" method="post">
+          <p>
+            <label for="arrive-day">Дата заезда</label>
+            <input id="arrive-day" type="text" name="date" placeholder="27 апреля 2017">
+          </p>
+          <p>
+            <label for="departure-day">Дата выезда</label>
+            <input id="departure-day" type="text" name="day-out" placeholder="4 июля 2017">
+          </p>
+          <p>
+            <label for="adults">Взрослые:</label>
+            <input type="number" id="adults" min="1" max="10" step="1">
+          </p>
+          <p>
+            <label for="children">Дети:</label>
+            <input type="number" id="children" min="0" max="5" step="1">
+          </p>
+          <button type="submit">Найти</button>
+        </form>
+      </section>
+    </main>
+    
+    <footer>
+      <section>
+        <p><a href="#">#visitsedona</a></p>
+        <p>Тел:<a href="+74956660166">+7(495)666-01-66</a></p>
+      </section>
+      <section>
+        <ul>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">youtube</a></li>
+        </ul>
+      </section>
+      <section>
+        <p>
+          Website by
+          <a href="https://htmlacademy.ru">HTML Academy</a>
+        </p>
+      </section>
+    </footer> 
+    </body>
 </html>
