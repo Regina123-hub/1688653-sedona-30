@@ -16,7 +16,7 @@ brown - 766357;
     url("fonts/PTSans.woff2") format ("woff2"),
     url("fonts/PTSans.woff") format ("woff");
 }
-body {
+.page-body {
     font-family: "PT Sans";
     font-style: normal;
     font-size: 14px;
@@ -25,12 +25,15 @@ body {
     color: rgba(51, 51, 51, 1);
     text-align: center;
     text-transform: uppercase;
-    width: 1200px;
+    min-width: 960px;
     margin: 0 auto;
-    background-color: rgba(238, 238, 238, 1)
-    
-
+    background-color: rgba(238, 238, 238, 1);
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
+
 
 .nav-item {
     font-size: 14px;
@@ -43,11 +46,17 @@ body {
     padding-top: 15px; 
     padding-bottom: 15px;
     margin-top: 0;
+    margin-bottom: 132px;
+    
 
+}
+.content-box {
+  display: grid;
 }
 .greeting-text {
     background-color: rgba(238, 238, 238, 1);
     height: 509px;
+    
 }
 .small-town {
    background-color: rgba(255, 255, 255, 1);
