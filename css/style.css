@@ -52,6 +52,7 @@ brown - 766357;
 }
 .content-box {
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .greeting-text {
     background-color: rgba(238, 238, 238, 1);
