@@ -16,6 +16,13 @@ brown - 766357;
     url("fonts/PTSans.woff2") format ("woff2"),
     url("fonts/PTSans.woff") format ("woff");
 }
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.page {
+    height: 100%;
+}
 .page-body {
     font-family: "PT Sans";
     font-style: normal;
@@ -34,7 +41,15 @@ brown - 766357;
     align-content: start;
 }
 
+.common-header {
+    height: 70px;
+    border: 5px solid rgba(0, 255, 0, 0.7);
+    
+}
 
+.common-navigation {
+    display: grid;
+}
 .nav-item {
     font-size: 14px;
     line-height: 1.85;
@@ -57,10 +72,15 @@ brown - 766357;
 .greeting-text {
     background-color: rgba(238, 238, 238, 1);
     height: 509px;
+    border: 5px solid red;
+    margin-bottom: 0;
     
 }
 .small-town {
    background-color: rgba(255, 255, 255, 1);
+   height: 272px;
+   border: 5px solid black;
+   margin-top: 0;
 }
 .small-town-phrase {
      font-size: 21px;
@@ -70,6 +90,7 @@ brown - 766357;
 }
 .try-city {
     height: 216px;
+    border: 5px solid yellow;
 }
 
 .reasons-phrase {
@@ -252,6 +273,9 @@ brown - 766357;
 .common-footer {
     color: rgba(0, 0, 0, 1);
     background-color: rgba(255, 255, 255, 0.9);
+    border: 5px solid blueviolet;
+    display: flex;
+    justify-content: space-around;
 }
 .up-down-a {
     text-decoration: none;
