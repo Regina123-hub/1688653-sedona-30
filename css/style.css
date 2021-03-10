@@ -1,29 +1,5 @@
-/*    
-black - 000000;
-light-blue(welcome) - 81B3D3;
-light-blae - 81B3D2
-white- FFFFFF;
-gray- 333333;
-beige -EEEEEE;
-brown - 766357;
-*/
-@font-face {
 
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("PTSans"),
-    url("fonts/PTSans.woff2") format ("woff2"),
-    url("fonts/PTSans.woff") format ("woff");
-}
-html, body {
-    height: 100%;
-    margin: 0;
-}
-.page {
-    height: 100%;
-}
-.page-body {
+body {
     font-family: "PT Sans";
     font-style: normal;
     font-size: 14px;
@@ -31,285 +7,147 @@ html, body {
     font-weight: 400;
     color: rgba(51, 51, 51, 1);
     text-align: center;
+}
+.page-body {
     text-transform: uppercase;
-    min-width: 960px;
-    margin: 0 auto;
-    background-color: rgba(238, 238, 238, 1);
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    align-content: start;
+    width: 1200px;
 }
-
 .common-header {
-    height: 70px;
-    border: 5px solid rgba(0, 255, 0, 0.7);
-    
-}
-
-.common-navigation {
-    display: grid;
-}
-.nav-item {
-    font-size: 14px;
-    line-height: 1.85;
-    font-weight: 700;
-    list-style-type: none;
     background-color: rgba(255, 255, 255, 1);
+}
+.header-list {
     display: flex;
     justify-content: space-around;
-    padding-top: 15px; 
-    padding-bottom: 15px;
-    margin-top: 0;
-    margin-bottom: 132px;
+    list-style-type: none;
+    font-weight: 700;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 1); 
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
     
-
 }
-.content-box {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-.greeting-text {
-    background-color: rgba(238, 238, 238, 1);
+.welcome {
+    background-image: url("img/images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(128, 128, 128);
+    width: 1200px;
     height: 509px;
-    border: 5px solid red;
-    margin-bottom: 0;
-    
 }
 .small-town {
-   background-color: rgba(255, 255, 255, 1);
-   height: 272px;
-   border: 5px solid black;
-   margin-top: 0;
-}
-.small-town-phrase {
-     font-size: 21px;
-     line-height: 1.23;
-     font-weight: 700;
-     color: rgba(0, 0, 0, 1);
-}
-.try-city {
+    background-color: rgba(255, 255, 255, 1);
     height: 216px;
-    border: 5px solid yellow;
 }
-
-.reasons-phrase {
+.justise-for-sedona {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.23;
+    color: rgba(0, 0, 0, 1);
+}
+.reasons-why {
+    color: rgba(51, 51, 51, 1);
+    line-height: 1.85;
     font-size: 14px;
-    line-height: 1.85; 
-    font-weight: 400;   
+    font-weight: normal;
 }
-
-.text-block {
-    display: flex;
-
+.advantages-list {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
 }
-.recommendations-list {
-    list-style-type: none;
-    display: flex;
-
-}
-.recommendation-block-text {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(129, 179, 210, 1);
-    width: 400px;
-    height: 256px;
-    
-}
-.upper {
+.advantages-list-head {
+    font-weight: bold;
     font-size: 21px;
     line-height: 1;
-    font-weight: 700;
-     
 }
-.dark {
-    color: rgba(0, 0, 0, 1);
-    background-color: rgba(255, 255, 255, 1);
-}
-.dark-gray {
-    color: rgba(0, 0, 0, 1);
-    background-color: rgba(238, 238, 238, 1);
-}
-.up-word {
-    color: rgba(129, 179, 211, 1);
-}
-.dark-phrase {
-    color: rgba(118, 100, 88, 1);
-}
-.light-phrase {
+.true-city-text {
+    width: 400px;
+    height: 256px;
     color: rgba(255, 255, 255, 1);
+    background-color: rgba(129, 179, 210, 1);
 }
-.grand-canyon {
-    color: rgba(255, 255, 255, 1);
+.true-city-head {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
 }
-.devils-bridge {
+.to-do-list {
     display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    height: 256px;
 }
-.question-section {
+
+.devils-bridge-text {
+    width: 400px;
+    height: 256px;
+    background-color:rgba(129, 179, 210, 1);
+    color: rgba(255, 255, 255, 1);
+}
+.devils-bridge-head {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+}
+.other-advantages {
+    background-color: rgba(238, 238, 238, 1);
+    height: 256px;
+    color: black;
+}
+.other-advantages-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.other-advantages-head {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+}
+.interested {
     background-color: rgba(255, 255, 255, 1);
+    height: 256px;
 }
-.question {
+.interested-head {
+    font-weight: 700;
     font-size: 30px;
     line-height: 0.8;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 1);
 }
-.search-head {
-    font-size: 21px;
-    line-height: 1.23;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(118, 99, 87, 1);
+.map {
+    height: 474px;
 }
-.arrival {
-    background-color: rgba(242, 242, 242, 1);
-}
-.departure {
-    background-color: rgba(242, 242, 242, 1);
-}
-.people-quantity {
-    background-color: rgba(242, 242, 242, 1);
-}
-.modal {
-    font-size: 21px;
-    line-height: 1.2;
-    color: rgba(0, 0, 0, 1);
-}
-
-.find-button {
-    font-size: 21px;
-    line-height: 1.23;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(129, 179, 210, 1);
-}
-.footer-contacts {
-    font-size: 21px;
-    line-height: 1.23;
-    font-weight: 700;
-}
-.footer-copyright {
-    font-size: 14px;
+.best-purpose {
     line-height: 1.85;
-}
-.opportunities {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(118, 99, 87, 1);
-}
-.opportunity-list {
-    list-style-type: none;
-}
-.opportunities-type {
-    font-size: 16px;
-    line-height: 1.3;
-}
-.price-button {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(118, 99, 87, 1);
-}
-.found-item {
-    font-size: 21px;
-    line-height: 1.2;
-    color: rgba(0, 0, 0, 1);
-}
-.sorting {
-    background-color: rgba(255, 255, 255, 1);
-}
-.sorting-head {
-    color: rgba(0, 0, 0, 1);
-}
-.sorting-item {
-    font-size: 12px;
-    line-height: 1.5;
-    list-style-type: none;
-}
-.sorting-a {
-    color: rgba(0, 0, 0, 1);
-    border-bottom: 1px dashed #81B3D2;
-    text-decoration: none;
-}
-.sorting-a:link {
-    color: rgba(0, 0, 0, 1);
-    border-bottom: 1px dashed #81B3D2;
-  
-}
-.sorting-a:hover {
-    color: rgba(129, 179, 210, 1);
-    border-bottom: 1px dashed #81B3D2;
-    
-}
-.sorting-a:active {
-    color: rgba(0, 0, 0, 1);
-
-}
-.sorting-a:visited {
-    color: rgba(129, 179, 210, 1);
-}
-.hotel-list-items {
-    list-style-type: none;
-}
-.hotel-name {
-    font-size: 21px;
-    line-height: 1.2;
-    color: rgba(0, 0, 0, 1);
-}
-.nav-a:link {
-    text-decoration: none;
-    color:rgba(0, 0, 0, 1);
-}
-.nav-a:hover {
-    color: rgba(129, 179, 210, 1);
-
-} 
-.nav-a:active {
-    color: rgba(0, 0, 0, 1);
-}
-.nav-a:visited {
-    color: rgba(0, 0, 0, 1);
-}
-
-.rating-number {
-    color: rgba(102, 102, 102, 1);
+    font-size: 14px;
+    font-weight: normal;
 }
 .common-footer {
-    color: rgba(0, 0, 0, 1);
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 5px solid blueviolet;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    height: 120px;
 }
-.up-down-a {
-    text-decoration: none;
+.contacts {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1.23;
 }
-.up-down-buttons {
-    list-style-type: none;
-    
-}
-.booking {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(118, 99, 87, 1);
-}
-.description {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(129, 179, 210, 1);
-}
-.social-button-list {
+.socials {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
 }
-.contacts-a {
-    color: rgba(0, 0, 0, 1);
-    text-decoration: none;
+.true-city, .devils-bridge {
+    display: flex;
+    flex-direction: row;
 }
-.hotel-name-a {
-    color: rgba(0, 0, 0, 1);
-    text-decoration: none; 
+.html-logo {
+    line-height: 1.85;
 }
-.hotel-name-a:link {
-    color: rgba(0, 0, 0, 1);
-    text-decoration: none;
-} 
-.hotel-name-a:hover {
-    color: rgba(129, 179, 210, 1);
-}
-.hotel-name-a:active {
-    color: rgba(0, 0, 0, 1);
+
+.welcome, .small-town, .true-city, .advantages-list, .devils-bridge, .other-advantages, .interested, .map {
+   border: 5px dashed blue; 
 }
