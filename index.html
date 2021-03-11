@@ -8,8 +8,9 @@
       <link rel="stylesheet" href="css/style.css">
       
       <title>HTML Academy: Седона</title>
-      <link rel="icon" href="favicon.ico">
-      <link rel="icon" href="favicon.ico.svg" type="image/svg+sml">
+
+      <link rel="shortcut icon" type="image/x-icon" href="favicon/32.ico">
+      <link rel="shortcut icon" href="favicon/152.ico" type="image/svg+sml">
       <link rel="apple-touch-icon" href="img/icons/152.png">
       <link rel="manifest" href="manifest.webmanifest">
 </head>
@@ -19,10 +20,10 @@
     <header class="common-header">
       <nav>
         <ul class="header-list">
-        <li>информация</li>
-        <li>фото и видео</li>
-        <li>карта штата</li> 
-        <li>гостиницы</li>
+        <li class="header-list-item"><a href="#" class="header-list-link">информация</a></li>
+        <li class="header-list-item"><a href="#"  class="header-list-link">фото и видео</a></li>
+        <li class="header-list-item"><a href="#"  class="header-list-link">карта штата</a></li> 
+        <li class="header-list-item"><a href="#"  class="header-list-link">гостиницы</a></li>
       </ul>
       </nav>
     </header>
@@ -110,8 +111,8 @@
 
   <footer class="common-footer">
     <div class="contacts">
-    <p>#visitsedona</p>
-    <p>тел: +7(495)666-01-66</p>
+    <p><a href="blank.html">#visitsedona</a></p>
+    <p><a href="tel:+74956660166">тел: +7(495)666-01-66</a></p>
   </div>
   <div>
     <ul class="socials">
@@ -124,6 +125,29 @@
     <p>website by html academy</p>
   </div>
   </footer>
+
+  <section class="search-form">
+    <h3>Поиск гостиницы в Седоне</h3>
+    <p>
+    <label for="in-day"> дата заезда: </label>
+      <input id="in-day" type="text" placeholder="24 апреля 2017">
+    </p>
+    <p>
+  <label for="out-day">дата выезда: </label>
+   <input id="out-day" type="text" placeholder="4 июля 2017">
+    </p>
+   <p>
+    <label for="adults"> взрослые: </label>
+     <input id="adults" type="text" placeholder="2">
+   </p>
+    <p>
+    <label for="children"> дети:</label>
+     <input id="children" type="text"  placeholder="0">
+    </p>
+    <button type="button">Найти</button>
+  </section>
+
+  
     </body>
   
 </html>

@@ -7,6 +7,7 @@ body {
     font-weight: 400;
     color: rgba(51, 51, 51, 1);
     text-align: center;
+    margin: 0 auto;
 }
 .page-body {
     text-transform: uppercase;
@@ -23,6 +24,20 @@ body {
     line-height: 1.8;
     color: rgba(0, 0, 0, 1); 
 }
+.header-list-link:link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+.header-list-link:hover {
+    color: rgba(129, 179, 210, 1);
+}
+.header-list-link:active {
+    color: rgba(0, 0, 0, 0.1);
+}
+.header-list-link:visited {
+    color: rgba(118, 99, 87, 1);
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -128,6 +143,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     height: 120px;
 }
 .contacts {
@@ -147,7 +163,9 @@ body {
 .html-logo {
     line-height: 1.85;
 }
-
+.search-form {
+    display: none;
+}
 .welcome, .small-town, .true-city, .advantages-list, .devils-bridge, .other-advantages, .interested, .map {
    border: 5px dashed blue; 
 }
