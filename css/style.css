@@ -45,9 +45,9 @@ body {
     
 }
 .welcome {
-    background-image: url("img/images/background.png");
-    background-repeat: no-repeat;
+    background-image:  url("img/images/background.png");
     background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(128, 128, 128);
     width: 1200px;
