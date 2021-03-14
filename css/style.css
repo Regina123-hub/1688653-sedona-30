@@ -45,7 +45,7 @@ body {
     
 }
 .welcome {
-    background-image:  url("img/images/background.png");
+    background-image:  url("https://cdn.pixabay.com/photo/2016/02/01/21/33/arizona-1174462_1280.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -168,4 +168,29 @@ body {
 }
 .welcome, .small-town, .true-city, .advantages-list, .devils-bridge, .other-advantages, .interested, .map {
    border: 5px dashed blue; 
+}
+.social-link {
+  width: 36px;
+  height: 36px;   
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  background-color: rgba(129, 179, 210, 1);
+
+}
+.social-link-twitter {
+    background-image: url("https://netology-code.github.io/resourses/pics/twitter.svg");
+}
+.social-link-facebook {
+     background-image: url("https://netology-code.github.io/resourses/pics/facebook.svg");
+}
+.social-link-youtube {
+     background-image: url("https://www.flaticon.com/svg/vstatic/svg/49/49084.svg?token=exp=1615741163~hmac=8e1de1d83e2c8782628b98f4a4355756");
+}
+.social-link-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
 }
